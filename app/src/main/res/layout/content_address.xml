@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".AddressActivity"
+        tools:showIn="@layout/app_bar_address">
+
+    <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:textColor="@color/colorPurpleTextLabel"
+                android:id="@+id/tv_we_are_located_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_located_in"
+                android:textSize="@dimen/text_size"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="26dp"
+                android:layout_height="0dp">
+
+            <ImageView
+                    android:id="@+id/iv_ic_address"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="@dimen/content_margin_top"
+                    android:contentDescription="@string/desc_icon_address"
+                    android:src="@drawable/ic_address"
+                    android:tint="@color/colorGreyIcon"/>
+
+            <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_ic_address"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_toEndOf="@+id/iv_ic_address"
+                    android:layout_toRightOf="@+id/iv_ic_address"
+                    android:text="@string/address"/>
+        </RelativeLayout>
+
+
+        <TextView
+                android:id="@+id/tv_whatsapp_contact_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_are_you_in_mall"
+                android:textColor="@color/colorPurpleTextLabel"
+                android:textSize="@dimen/text_size"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/iv_ic_whatsapp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="@dimen/content_margin_top"
+                    android:contentDescription="@string/desc_icon_whatsapp"
+                    android:onClick="whatsAppHelp"
+                    android:src="@drawable/ic_whatsapp"
+                    android:tint="@color/colorGreyIcon"/>
+
+            <TextView
+                    android:id="@+id/tv_whatsapp_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_ic_whatsapp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/iv_ic_whatsapp"
+                    android:layout_toRightOf="@+id/iv_ic_whatsapp"
+                    android:onClick="whatsAppHelp"
+                    android:text="@string/whatsapp_number"/>
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/tv_difficulty_finding_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_difficulty_finding_us"
+                android:textColor="@color/colorPurpleTextLabel"
+                android:textSize="@dimen/text_size"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_margin_top"
+                android:background="@color/colorAccent"
+                android:onClick="showRoute"
+                android:text="@string/label_view_route"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
