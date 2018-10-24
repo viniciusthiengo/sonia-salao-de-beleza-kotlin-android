@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="text_sizes_whatsapp_number">
+        <item>12sp</item>
+        <item>14sp</item>
+        <item>16sp</item>
+        <item>18sp</item>
+        <item>20sp</item>
+    </array>
+</resources>

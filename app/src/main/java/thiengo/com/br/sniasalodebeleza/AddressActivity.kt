@@ -5,13 +5,16 @@ import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
+import android.support.v4.widget.TextViewCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
+import android.util.TypedValue
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_address.*
 import kotlinx.android.synthetic.main.app_bar_address.*
+import kotlinx.android.synthetic.main.content_address.*
 
 class AddressActivity :
     AppCompatActivity(),
@@ -28,6 +31,15 @@ class AddressActivity :
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener( this )
+
+
+        TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(
+            tv_address,
+            12,
+            28,
+            1,
+            TypedValue.COMPLEX_UNIT_SP
+        )
     }
 
     override fun onResume() {

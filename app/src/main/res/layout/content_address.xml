@@ -46,7 +46,7 @@
             <TextView
                     android:id="@+id/tv_address"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_alignTop="@+id/iv_ic_address"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
@@ -58,7 +58,9 @@
                     android:layout_marginBottom="16dp"
                     android:layout_toEndOf="@+id/iv_ic_address"
                     android:layout_toRightOf="@+id/iv_ic_address"
-                    android:text="@string/address"/>
+                    android:text="@string/address"
+                    android:textColor="@color/colorLinkText"
+                    android:onClick="showRoute" />
         </RelativeLayout>
 
 
@@ -92,7 +94,7 @@
             <TextView
                     android:id="@+id/tv_whatsapp_number"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_alignTop="@+id/iv_ic_whatsapp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
@@ -102,7 +104,10 @@
                     android:layout_toEndOf="@+id/iv_ic_whatsapp"
                     android:layout_toRightOf="@+id/iv_ic_whatsapp"
                     android:onClick="whatsAppHelp"
-                    android:text="@string/whatsapp_number"/>
+                    android:text="@string/whatsapp_number"
+                    android:textColor="@color/colorLinkText"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizePresetSizes="@array/text_sizes_whatsapp_number"/>
         </RelativeLayout>
 
         <TextView
